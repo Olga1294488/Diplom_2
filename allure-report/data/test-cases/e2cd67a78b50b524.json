@@ -1,0 +1,350 @@
+{
+  "uid" : "e2cd67a78b50b524",
+  "name" : "Создание пользователя, который уже зарегистрирован",
+  "fullName" : "tests.test_user_registration.TestUserRegistration#test_create_existing_user",
+  "historyId" : "5b46ecf1f47cad908db7319399210114",
+  "time" : {
+    "start" : 1777988964177,
+    "stop" : 1777988964533,
+    "duration" : 356
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1777988947965,
+      "stop" : 1777988947987,
+      "duration" : 22
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "unique_user",
+    "time" : {
+      "start" : 1777988963766,
+      "stop" : 1777988964176,
+      "duration" : 410
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создать тестового пользователя",
+      "time" : {
+        "start" : 1777988963766,
+        "stop" : 1777988964176,
+        "duration" : 410
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Отправить 'POST' запрос на '/auth/register'",
+        "time" : {
+          "start" : 1777988963767,
+          "stop" : 1777988964176,
+          "duration" : 409
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Параметры запроса: URL=https://stellarburgers.education-services.ru/api/auth/register, data={'email': 'susan00_1777988963766_3567@test.com', 'password': '82(50Cr8', 'name': 'Melanie Holt'}",
+          "time" : {
+            "start" : 1777988963767,
+            "stop" : 1777988964176,
+            "duration" : 409
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Ответ сервера: status=200, body={\"success\":true,\"user\":{\"email\":\"susan00_1777988963766_3567@test.com\",\"name\":\"Melanie Holt\"},\"accessToken\":\"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZjlmNTY0OTg0MjcwMDAxYmU4Zjg4OCIsImlhdCI6MTc3Nzk4ODk2NCwiZXhwIjoxNzc3OTkwMTY0fQ.zEDOFXPONTFROOWDqRiUP4OVczah9ULB2K2AZiRVSzs\",\"refreshToken\":\"dff2597f67a1d389a6af3f471fae31eaf544b8e185567956e4d9e4bf75ddb912fb32b3a588ed0166\"}",
+          "time" : {
+            "start" : 1777988964176,
+            "stop" : 1777988964176,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "method",
+          "value" : "'POST'"
+        }, {
+          "name" : "endpoint",
+          "value" : "'/auth/register'"
+        }, {
+          "name" : "data",
+          "value" : "{'email': 'susan00_1777988963766_3567@test.com', 'password': '82(50Cr8', 'name': 'Melanie Holt'}"
+        }, {
+          "name" : "headers",
+          "value" : "None"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Повторно отправить запрос на регистрацию того же пользователя",
+      "time" : {
+        "start" : 1777988964177,
+        "stop" : 1777988964532,
+        "duration" : 355
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Отправить 'POST' запрос на '/auth/register'",
+        "time" : {
+          "start" : 1777988964177,
+          "stop" : 1777988964532,
+          "duration" : 355
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Параметры запроса: URL=https://stellarburgers.education-services.ru/api/auth/register, data={'email': 'susan00_1777988963766_3567@test.com', 'password': '82(50Cr8', 'name': 'Melanie Holt'}",
+          "time" : {
+            "start" : 1777988964177,
+            "stop" : 1777988964532,
+            "duration" : 355
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Ответ сервера: status=403, body={\"success\":false,\"message\":\"User already exists\"}",
+          "time" : {
+            "start" : 1777988964532,
+            "stop" : 1777988964532,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "method",
+          "value" : "'POST'"
+        }, {
+          "name" : "endpoint",
+          "value" : "'/auth/register'"
+        }, {
+          "name" : "data",
+          "value" : "{'email': 'susan00_1777988963766_3567@test.com', 'password': '82(50Cr8', 'name': 'Melanie Holt'}"
+        }, {
+          "name" : "headers",
+          "value" : "None"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Проверить, что сервер возвращает ошибку",
+      "time" : {
+        "start" : 1777988964532,
+        "stop" : 1777988964532,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "unique_user::0",
+    "time" : {
+      "start" : 1777988964534,
+      "stop" : 1777988965228,
+      "duration" : 694
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Очистка: удалить тестового пользователя",
+      "time" : {
+        "start" : 1777988964534,
+        "stop" : 1777988965227,
+        "duration" : 693
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Отправить 'DELETE' запрос на '/auth/user'",
+        "time" : {
+          "start" : 1777988964534,
+          "stop" : 1777988965227,
+          "duration" : 693
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Параметры запроса: URL=https://stellarburgers.education-services.ru/api/auth/user, data=None",
+          "time" : {
+            "start" : 1777988964534,
+            "stop" : 1777988965227,
+            "duration" : 693
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Ответ сервера: status=202, body={\"success\":true,\"message\":\"User successfully removed\"}",
+          "time" : {
+            "start" : 1777988965227,
+            "stop" : 1777988965227,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "method",
+          "value" : "'DELETE'"
+        }, {
+          "name" : "endpoint",
+          "value" : "'/auth/user'"
+        }, {
+          "name" : "data",
+          "value" : "None"
+        }, {
+          "name" : "headers",
+          "value" : "{'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZjlmNTY0OTg0MjcwMDAxYmU4Zjg4OCIsImlhdCI6MTc3Nzk4ODk2NCwiZXhwIjoxNzc3OTkwMTY0fQ.zEDOFXPONTFROOWDqRiUP4OVczah9ULB2K2AZiRVSzs'}"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Создание пользователя"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "epic",
+    "value" : "Stellar Burgers API"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_user_registration"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestUserRegistration"
+  }, {
+    "name" : "host",
+    "value" : "HOME-PC"
+  }, {
+    "name" : "thread",
+    "value" : "8828-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_user_registration"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e2cd67a78b50b524.json",
+  "parameterValues" : [ ]
+}

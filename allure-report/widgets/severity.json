@@ -1,0 +1,121 @@
+[ {
+  "uid" : "4660cdd58702345",
+  "name" : "Вход с неверным логином и паролем",
+  "time" : {
+    "start" : 1777988962287,
+    "stop" : 1777988962686,
+    "duration" : 399
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "406e2099e166b36e",
+  "name" : "Создание пользователя без заполнения обязательного поля",
+  "time" : {
+    "start" : 1777988965231,
+    "stop" : 1777988965574,
+    "duration" : 343
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "1e45d0f1f924a0c7",
+  "name" : "Создание заказа с авторизацией и ингредиентами",
+  "time" : {
+    "start" : 1777988948387,
+    "stop" : 1777988952104,
+    "duration" : 3717
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "e2cd67a78b50b524",
+  "name" : "Создание пользователя, который уже зарегистрирован",
+  "time" : {
+    "start" : 1777988964177,
+    "stop" : 1777988964533,
+    "duration" : 356
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "89cf3c4a2086643a",
+  "name" : "Вход под существующим пользователем",
+  "time" : {
+    "start" : 1777988961175,
+    "stop" : 1777988961585,
+    "duration" : 410
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "8cd886b7e5281ed1",
+  "name" : "Создание заказа с ингредиентами",
+  "time" : {
+    "start" : 1777988953532,
+    "stop" : 1777988957296,
+    "duration" : 3764
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "1bc531dfe50435e9",
+  "name" : "Создание заказа с неверным хешем ингредиентов",
+  "time" : {
+    "start" : 1777988959780,
+    "stop" : 1777988960086,
+    "duration" : 306
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c9c876931f033d6b",
+  "name" : "Создание заказа без авторизации, но с ингредиентами",
+  "time" : {
+    "start" : 1777988952804,
+    "stop" : 1777988953135,
+    "duration" : 331
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "81ea0d149ffaa925",
+  "name" : "Создание заказа без ингредиентов",
+  "time" : {
+    "start" : 1777988958379,
+    "stop" : 1777988958685,
+    "duration" : 306
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "66e4aa2c84e74e50",
+  "name" : "Создание пользователя без заполнения обязательного поля",
+  "time" : {
+    "start" : 1777988965899,
+    "stop" : 1777988966215,
+    "duration" : 316
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "ca03e6994f041293",
+  "name" : "Создание уникального пользователя",
+  "time" : {
+    "start" : 1777988962688,
+    "stop" : 1777988963764,
+    "duration" : 1076
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "2eb7cc046fc51795",
+  "name" : "Создание пользователя без заполнения обязательного поля",
+  "time" : {
+    "start" : 1777988965577,
+    "stop" : 1777988965897,
+    "duration" : 320
+  },
+  "status" : "passed",
+  "severity" : "critical"
+} ]
