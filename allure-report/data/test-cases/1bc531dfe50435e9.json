@@ -1,0 +1,365 @@
+{
+  "uid" : "1bc531dfe50435e9",
+  "name" : "Создание заказа с неверным хешем ингредиентов",
+  "fullName" : "tests.test_create_order.TestCreateOrder#test_create_order_with_invalid_ingredients_hash",
+  "historyId" : "ac3ee13f1d5c9306a927d6c6322f79ea",
+  "time" : {
+    "start" : 1777988959780,
+    "stop" : 1777988960086,
+    "duration" : 306
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1777988947965,
+      "stop" : 1777988947987,
+      "duration" : 22
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "authorized_client",
+    "time" : {
+      "start" : 1777988959779,
+      "stop" : 1777988959779,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "unique_user",
+    "time" : {
+      "start" : 1777988959384,
+      "stop" : 1777988959779,
+      "duration" : 395
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создать тестового пользователя",
+      "time" : {
+        "start" : 1777988959385,
+        "stop" : 1777988959779,
+        "duration" : 394
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Отправить 'POST' запрос на '/auth/register'",
+        "time" : {
+          "start" : 1777988959385,
+          "stop" : 1777988959779,
+          "duration" : 394
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Параметры запроса: URL=https://stellarburgers.education-services.ru/api/auth/register, data={'email': 'traymond_1777988959384_9377@test.com', 'password': 'A3%W4Kjf', 'name': 'Wendy Green'}",
+          "time" : {
+            "start" : 1777988959385,
+            "stop" : 1777988959779,
+            "duration" : 394
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Ответ сервера: status=200, body={\"success\":true,\"user\":{\"email\":\"traymond_1777988959384_9377@test.com\",\"name\":\"Wendy Green\"},\"accessToken\":\"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZjlmNTVmOTg0MjcwMDAxYmU4Zjg4MSIsImlhdCI6MTc3Nzk4ODk1OSwiZXhwIjoxNzc3OTkwMTU5fQ.wLNv8hYNQv4geb-B8ffwgtsWpUsoa1uvgaNHbY3Yp1c\",\"refreshToken\":\"f49ad026dddde6e51dae648ccb0d66172cc5e22dacf8a60e15da3ad110d57e3d1c5422fff242e303\"}",
+          "time" : {
+            "start" : 1777988959779,
+            "stop" : 1777988959779,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "method",
+          "value" : "'POST'"
+        }, {
+          "name" : "endpoint",
+          "value" : "'/auth/register'"
+        }, {
+          "name" : "data",
+          "value" : "{'email': 'traymond_1777988959384_9377@test.com', 'password': 'A3%W4Kjf', 'name': 'Wendy Green'}"
+        }, {
+          "name" : "headers",
+          "value" : "None"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Отправить запрос с неверными идентификаторами ингредиентов",
+      "time" : {
+        "start" : 1777988959780,
+        "stop" : 1777988960086,
+        "duration" : 306
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Отправить 'POST' запрос на '/orders'",
+        "time" : {
+          "start" : 1777988959780,
+          "stop" : 1777988960086,
+          "duration" : 306
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Параметры запроса: URL=https://stellarburgers.education-services.ru/api/orders, data={'ingredients': ['invalid_hash_12345']}",
+          "time" : {
+            "start" : 1777988959780,
+            "stop" : 1777988960085,
+            "duration" : 305
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Ответ сервера: status=500, body=<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Internal Server Error</pre>\n</body>\n</html>\n",
+          "time" : {
+            "start" : 1777988960086,
+            "stop" : 1777988960086,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "method",
+          "value" : "'POST'"
+        }, {
+          "name" : "endpoint",
+          "value" : "'/orders'"
+        }, {
+          "name" : "data",
+          "value" : "{'ingredients': ['invalid_hash_12345']}"
+        }, {
+          "name" : "headers",
+          "value" : "None"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Проверить, что сервер возвращает ошибку 500",
+      "time" : {
+        "start" : 1777988960086,
+        "stop" : 1777988960086,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "unique_user::0",
+    "time" : {
+      "start" : 1777988960087,
+      "stop" : 1777988960776,
+      "duration" : 689
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Очистка: удалить тестового пользователя",
+      "time" : {
+        "start" : 1777988960087,
+        "stop" : 1777988960775,
+        "duration" : 688
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Отправить 'DELETE' запрос на '/auth/user'",
+        "time" : {
+          "start" : 1777988960087,
+          "stop" : 1777988960775,
+          "duration" : 688
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Параметры запроса: URL=https://stellarburgers.education-services.ru/api/auth/user, data=None",
+          "time" : {
+            "start" : 1777988960087,
+            "stop" : 1777988960775,
+            "duration" : 688
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "Ответ сервера: status=202, body={\"success\":true,\"message\":\"User successfully removed\"}",
+          "time" : {
+            "start" : 1777988960775,
+            "stop" : 1777988960775,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "method",
+          "value" : "'DELETE'"
+        }, {
+          "name" : "endpoint",
+          "value" : "'/auth/user'"
+        }, {
+          "name" : "data",
+          "value" : "None"
+        }, {
+          "name" : "headers",
+          "value" : "{'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZjlmNTVmOTg0MjcwMDAxYmU4Zjg4MSIsImlhdCI6MTc3Nzk4ODk1OSwiZXhwIjoxNzc3OTkwMTU5fQ.wLNv8hYNQv4geb-B8ffwgtsWpUsoa1uvgaNHbY3Yp1c'}"
+        } ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Создание заказа"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "epic",
+    "value" : "Stellar Burgers API"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_create_order"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCreateOrder"
+  }, {
+    "name" : "host",
+    "value" : "HOME-PC"
+  }, {
+    "name" : "thread",
+    "value" : "8828-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_create_order"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1bc531dfe50435e9.json",
+  "parameterValues" : [ ]
+}
